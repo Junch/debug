@@ -10,7 +10,6 @@
 
 [Dd]ebug/
 [Rr]elease/
-x64/
 build/
 [Bb]in/
 [Oo]bj/
@@ -29,6 +28,7 @@ build/
 *.obj
 *.pch
 *.pdb
+!example.pdb
 *.pgc
 *.pgd
 *.rsp
