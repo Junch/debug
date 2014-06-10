@@ -1,0 +1,1 @@
+windbg -Q -c "bu example!main;g;" example.exe
