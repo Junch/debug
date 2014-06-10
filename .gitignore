@@ -25,6 +25,7 @@ build/
 *_p.c
 *.ilk
 *.meta
+*.exe
 *.obj
 *.pch
 *.pdb
