@@ -1,1 +1,2 @@
+.printf "%p\n", @ebx
 .if(@ebx%3=0){} .else{gc}
