@@ -1,2 +1,3 @@
 .printf "%p\n", @ebx
+.if(@ebx = 2){ba w4 hello!gNumber}
 .if(@ebx%3=0){} .else{gc}

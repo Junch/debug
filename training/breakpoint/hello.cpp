@@ -2,11 +2,14 @@
 #include <stdio.h>
 #include <windows.h>
 
+int gNumber = 0;
+
 __declspec(noinline)
 void printHello(int i)
 {
     printf(">> printHello\n");
     printf("%d, Hello World!\n",i);
+    gNumber = i;
     printf("<< printHello\n");
 }
 
