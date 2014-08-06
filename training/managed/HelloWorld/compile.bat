@@ -1,1 +1,1 @@
-%windir%\Microsoft.NET\Framework\v4.0.30319\csc.exe /debug /platform:x86 /out:test.exe main.cs
+%windir%\Microsoft.NET\Framework\v4.0.30319\csc.exe /debug /platform:x64 /out:test.exe main.cs
