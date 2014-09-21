@@ -1,0 +1,28 @@
+$$ Initialize our pseudo-registers
+r? $t0=${$arg1}._Myhead
+r? $t1=${$arg1}._Mysize
+
+.printf "size=%N\n", $t1
+
+r $t4 = 0
+.while(@$t4 < @$t1)
+{
+	r? $t2 = @@c++(@$t0->_Next)
+	r  $t3 = @@c++(&@$t2->_Myval)
+	.printf "p=%p\n", @$t2
+	da @$t3
+
+	r? $t0 = @$t2
+	r  $t4 = @$t4 + 1
+}
+
+$$r $t4 = 0
+$$.while(@$t4 < @$t1)
+$${
+$$	r? $t2 = @@c++(@$t0->_Next)
+$$	r? $t3 = @@c++(&@$t2->_Myval)
+$$	da @@c++(&@$t3->_Bx)
+
+$$	r? $t0 = @$t2
+$$	r $t4 = @$t4 + 1
+$$}

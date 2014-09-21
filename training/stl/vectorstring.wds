@@ -1,0 +1,13 @@
+$$ Initialize our pseudo-registers
+r? $t0=${$arg1}._Myfirst
+r? $t1=${$arg1}._Mylast
+
+$$ Go through the elements until _Mylast is reached.
+.while (@$t0 != @$t1)
+{
+  $$ Dump the string content
+  da @@c++(&@$t0->_Bx)
+
+  $$ Go to the next element.
+  r? $t0=@$t0+1
+}
