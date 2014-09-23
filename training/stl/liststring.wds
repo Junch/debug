@@ -7,10 +7,10 @@ r? $t1=${$arg1}._Mysize
 r $t4 = 0
 .while(@$t4 < @$t1)
 {
-	r? $t2 = @@c++(@$t0->_Next)
-	r  $t3 = @@c++(&@$t2->_Myval)
-	.printf "p=%p\n", @$t2
-	da @$t3
+	r? $t2 = @$t0->_Next
+	r? $t3 = &@$t2->_Myval
+	.printf "p=%p\n", $t2
+	da $t3
 
 	r? $t0 = @$t2
 	r  $t4 = @$t4 + 1
