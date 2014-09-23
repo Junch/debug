@@ -1,5 +1,7 @@
 ﻿http://blogs.msdn.com/b/ambrosew/archive/2013/01/15/debugging-stl-containers-with-windbg-part-1-vector.aspx
 http://0cch.net/wordpress/?p=460
+http://blogs.microsoft.co.il/sasha/2013/07/25/displaying-and-searching-stdmap-contents-in-windbg/
+http://letsexplorewindows.blogspot.hk/2013/12/debugging-map-using-windbg.html
 
 0:000> dt ss
 Local var @ 0x1ffe70 Type std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
@@ -35,3 +37,7 @@ container!std::basic_string<char,std::char_traits<char>,std::allocator<char> >
    +0x010 _Mysize          : 1
    +0x018 _Myres           : 0xf
    =00000001`3fe00000 npos             : 0x3`00905a4d
+
+
+
+0:000> $$>a<mapstring.wds mymap -c ".block{?? @$t9.first;?? @$t9.second._Bx}"
