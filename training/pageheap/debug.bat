@@ -1,0 +1,1 @@
+windbg -Q -c "bm main;g;" heap.exe
