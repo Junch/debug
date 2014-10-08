@@ -1,0 +1,19 @@
+$$ http://msdn.microsoft.com/en-us/library/windows/desktop/ms681401(v=vs.85).aspx
+
+r $t0=${$arg1}
+
+$$ A pointer to an EXCEPTION_POINTERS structure
+r $t1=poi(@$t0)
+.printf "Exception pointers=%p\n", @$t0
+
+.printf "******************\n"
+$$ A pointer to an EXCEPTION_RECORD structure
+r $t2=poi(@$t1)
+.printf "Exception record=%p\n", @$t2
+.exr @$t2
+
+.printf "******************\n"
+$$ A pointer to a CONTEXT structure
+r $t3=poi(@$t1+8)
+.printf "Context record=%p\n", @$t3
+.cxr @$t3
