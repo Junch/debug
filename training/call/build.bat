@@ -1,0 +1,1 @@
+cl /EHsc /Zi /Ox /favor:INTEL64 hello.cpp /link /debug

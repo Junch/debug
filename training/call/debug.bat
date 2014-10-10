@@ -1,0 +1,1 @@
+windbg -Q -c "bu hello!main;g;" hello.exe
