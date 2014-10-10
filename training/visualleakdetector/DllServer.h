@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+#include <map>
 
 #ifdef DLLSERVER
 #define DLLSPEC __declspec(dllexport)
@@ -6,5 +8,5 @@
 #define DLLSPEC __declspec(dllimport)
 #endif
 
-DLLSPEC int add(int a, int b);
-DLLSPEC int multiply(int a, int b);
+DLLSPEC void getMap(std::map<std::string, int>& maps);
+DLLSPEC int* getArray();

@@ -1,10 +1,10 @@
 !include <win32.mak>
 
 all: DllServer.dll DllClient.exe
-	DllClient.exe 3 4
+	DllClient.exe
 
 DllServer.dll : DllServer.cpp DllServer.h
-    cl /LD /MDd /Zi /nologo DllServer.cpp /DDLLSERVER /D_DEBUG /debug
+    cl /EHsc /Zi /nologo /MDd /LD DllServer.cpp /DDLLSERVER /D_DEBUG /debug
 
 DllClient.exe : DllClient.cpp
     cl /EHsc /Zi /nologo /MDd DllClient.cpp /D_DEBUG /debug

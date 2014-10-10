@@ -1,13 +1,14 @@
 #include "DllServer.h"
 #include "vld.h"
 
-int add(int a, int b)
+void getMap(std::map<std::string, int>& maps)
 {
-	int *num = new int[100];
-    return (a+b);
+    int *leak = new int[50];
+    maps["tom"]=2;
+    maps["Peter"]=13;
 }
 
-int multiply(int a, int b)
+int* getArray()
 {
-    return a*b;
+    return new int[12];
 }
