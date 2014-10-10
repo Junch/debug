@@ -1,0 +1,1 @@
+cl /EHsc /Zi /Od /D_DEBUG /MTd /favor:INTEL64 leak.cpp /debug
