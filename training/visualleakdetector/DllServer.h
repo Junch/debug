@@ -9,4 +9,5 @@
 #endif
 
 DLLSPEC void getMap(std::map<std::string, int>& maps);
+DLLSPEC void getMap(std::map<std::string, std::string*>& maps);
 DLLSPEC int* getArray();

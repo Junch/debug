@@ -3,9 +3,14 @@
 
 void getMap(std::map<std::string, int>& maps)
 {
-    int *leak = new int[50];
     maps["tom"]=2;
     maps["Peter"]=13;
+}
+
+void getMap(std::map<std::string, std::string*>& maps)
+{
+    maps["tom"]= new std::string("Good boy");
+    maps["Peter"]=new std::string("Handsome guy");
 }
 
 int* getArray()
