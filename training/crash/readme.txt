@@ -12,3 +12,9 @@ http://blog.csdn.net/starlee/article/details/6618849
 
 http://blog.csdn.net/starlee/article/details/6630816
 让程序在崩溃时体面的退出之Dump文件
+
+http://blog.csdn.net/starlee/article/details/6655779
+让程序在崩溃时体面的退出之终极解决方案（SEH+Dump+Unhandled Exception Filter）
+
+http://blog.csdn.net/starlee/article/details/6662011
+让程序在崩溃时体面的退出之总结
