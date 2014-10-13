@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <windows.h>
 
+//The following line can replace the __declspec(noinline)
+//#pragma auto_inline (off)
+
 __declspec(noinline)
 void
 FunctionWith4Params( int param1, int param2, int param3,
