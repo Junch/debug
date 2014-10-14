@@ -1,0 +1,1 @@
+windbg -c "sxe ld clr;g;.loadby sos clr"  OrderProcessing.exe

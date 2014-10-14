@@ -1,0 +1,13 @@
+$$ print the orders that then CustomerId > 0n50 
+
+.foreach /pS 7 /ps 100 (mt {!Name2EE OrderProcessing!OrderProcessing.Order})
+{
+  r $t0 = mt
+}
+.foreach (order {!dumpheap -mt @$t0 -short})
+{
+  .if (poi( order + 0n16) > 0n50)
+  {
+    du poi( order + 0n8) + 0n12
+  }
+}
