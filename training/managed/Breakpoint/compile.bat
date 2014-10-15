@@ -1,1 +1,1 @@
-%windir%\Microsoft.NET\Framework\v4.0.30319\csc.exe /debug /platform:x86 /out:03Breakpoint.exe 03Breakpoint.cs
+%windir%\Microsoft.NET\Framework64\v4.0.30319\csc.exe /debug:pdbonly /o 03Breakpoint.cs

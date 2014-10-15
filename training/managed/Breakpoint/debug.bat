@@ -1,0 +1,1 @@
+windbg -c "g" 03breakpoint.exe

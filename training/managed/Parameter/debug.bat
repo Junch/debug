@@ -1,0 +1,1 @@
+windbg -c "sxe ld clrjit;g" example.exe
