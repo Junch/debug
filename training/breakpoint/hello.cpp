@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <windows.h>
 
 int gNumber = 0;
 
@@ -19,7 +18,7 @@ int getNumber(int i) {
 }
 
 int
-main( int /*argc*/, TCHAR** /*argv*/ )
+main( int /*argc*/, char** /*argv*/ )
 {
     for (int i=0; i<10; ++i){
         printHello(getNumber(i));
