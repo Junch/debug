@@ -1,0 +1,1 @@
+cl /DDEBUG /EHa /Zi /Ox hello.cpp /link /debug 
