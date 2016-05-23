@@ -1,0 +1,1 @@
+windbg.exe -Q -c "$$<commands.wds; g;" hello.exe
