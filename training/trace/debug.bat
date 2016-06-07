@@ -1,1 +1,1 @@
-windbg.exe -Q -c "$$<commands.wds; g;" hello.exe
+windbg.exe -Q -logo logfile.txt -c "$$<commands.wds; g;" hello.exe
