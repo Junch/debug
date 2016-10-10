@@ -13,6 +13,12 @@
 - (void)sayHello {
     printf("Hello, my name is %s!\n", [self name]);
 }
+
+- (NSString *)description {
+	NSString *sz = [NSString stringWithFormat:@"Name: %s", self.name];
+	return sz;
+}
+
 @end
 
 int main() {
