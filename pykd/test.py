@@ -1,2 +1,3 @@
 from pykd import * 
-dprintln("Hello") 
+
+print pykd.dbgCommand("!teb")
